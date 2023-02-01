@@ -93,3 +93,21 @@ svg {
         filter: hue-rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+
+    svg {
+        max-width: 65%;
+        height: auto;
+    }
+
+
+   .container h2 {
+        font-size: 4em;
+    }
+
+    .container video {
+        width: auto;
+        min-height: 100%;
+    }
+}
