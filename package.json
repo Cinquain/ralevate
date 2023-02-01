@@ -6,15 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "devstart": "nodemon server.js"
   },
   "author": "James Allan",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "morgan": "^1.10.0",
     "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.20",
-    "serverless-http": "^3.1.1"
+    "request": "^2.88.2",
+    "serverless-http": "^3.1.1",
+    "superagent": "^8.0.9"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
